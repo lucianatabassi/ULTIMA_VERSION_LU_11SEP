@@ -30,8 +30,9 @@ public class VENDA_INTERACCION : MonoBehaviour
     {
 
 
-        //if (!agarroHoja && Input.GetKeyDown("mouse 0") && enRango(hoja))
-        if (!agarroHoja && Input.GetKeyDown("joystick button 1") && enRango(hoja))
+        // if (!agarroHoja && Input.GetKeyDown("mouse 0") && enRango(hoja)) //DESCOMENTALO PARA PC Y COMENTALO PARA APK
+        //if (!agarroHoja && Input.GetKeyDown("joystick button 1") && enRango(hoja)) 
+        if (!agarroHoja && Input.GetButtonDown("Fire1") && enRango(hoja)) //DESCOMENTALO PARA APK COMENTALO PARA PC 
         {
             Destroy(hoja);
             agarroHoja = true;

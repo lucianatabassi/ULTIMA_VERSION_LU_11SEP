@@ -28,7 +28,7 @@ public class PAJARO : MonoBehaviour
         scriptVenda = FindObjectOfType<VENDA_INTERACCION>();
     }
 
-  /* private void OnMouseDown()
+ /*  private void OnMouseDown()  //ESTO DESCOMENTALO PARA QUE FUNCIONE EN COMPU Y COMENTALO PARA EL APK
     {
         Destroy(GameObject.FindGameObjectWithTag("Venda"));
         pajaroCurado = true;
@@ -60,7 +60,8 @@ public class PAJARO : MonoBehaviour
 
     private void Update()
     {
-        if (scriptVenda.joystick && Input.GetKeyDown("joystick button 1"))
+        //if (scriptVenda.joystick && Input.GetKeyDown("joystick button 1"))
+        if (scriptVenda.joystick && Input.GetButtonDown("Fire1"))
         {
             OnJoystickButtonDown();
         }
