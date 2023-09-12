@@ -14,7 +14,7 @@ public class prueba : MonoBehaviour
             player = GetComponent<CharacterController>();
 
             // Comprobar si el dispositivo admite el giroscopio
-            if (SystemInfo.supportsGyroscope)
+          /*  if (SystemInfo.supportsGyroscope)
             {
                 gyro = Input.gyro;
                 gyro.enabled = true; // Habilitamos el giroscopio
@@ -25,7 +25,7 @@ public class prueba : MonoBehaviour
             else
             {
                 Debug.LogError("El dispositivo no es compatible con el giroscopio.");
-            } // SI TE TIRA QUE EL GIROSCOPIO NO ES COMPATIBLE COMENTA TODO ESTE CONDICIONAL
+            }*/ // SI TE TIRA QUE EL GIROSCOPIO NO ES COMPATIBLE COMENTA TODO ESTE CONDICIONAL
         }
 
         private void Update()
