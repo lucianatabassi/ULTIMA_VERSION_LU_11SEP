@@ -50,8 +50,11 @@ public class PAJARO : MonoBehaviour
             if (collider.CompareTag("Venda"))
             {
                 // Si es moho, destrúyelo.
-                Destroy(collider.gameObject);
                 pajaroCurado = true;
+                sonidoCurar();
+                Destroy(circulo);
+                corazon.SetActive(true);
+                //Debug.Log("Pajaro curado");
                 pajaroCompletado = true;
 
             }
