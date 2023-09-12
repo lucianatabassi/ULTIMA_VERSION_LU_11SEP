@@ -22,7 +22,7 @@ public class MOHO_ELIMINAR : MonoBehaviour
     void Update()
     {
         // Verificar si se ha presionado el botón del joystick.
-        if (Input.GetKeyDown("joystick button 0"))
+        if (Input.GetKeyDown("joystick button 1"))
 
         {
             OnMouseDown();

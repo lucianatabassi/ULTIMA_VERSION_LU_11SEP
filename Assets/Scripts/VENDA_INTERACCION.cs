@@ -31,7 +31,7 @@ public class VENDA_INTERACCION : MonoBehaviour
 
 
         //if (!agarroHoja && Input.GetKeyDown("mouse 0") && enRango(hoja))
-        if (!agarroHoja && Input.GetKeyDown("joystick button 0") && enRango(hoja))
+        if (!agarroHoja && Input.GetKeyDown("joystick button 1") && enRango(hoja))
         {
             Destroy(hoja);
             agarroHoja = true;

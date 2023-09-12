@@ -28,7 +28,7 @@ public class PAJARO : MonoBehaviour
         scriptVenda = FindObjectOfType<VENDA_INTERACCION>();
     }
 
-   /* private void OnMouseDown()
+  /* private void OnMouseDown()
     {
         Destroy(GameObject.FindGameObjectWithTag("Venda"));
         pajaroCurado = true;
@@ -60,7 +60,7 @@ public class PAJARO : MonoBehaviour
 
     private void Update()
     {
-        if (scriptVenda.joystick && Input.GetKeyDown("joystick button 0"))
+        if (scriptVenda.joystick && Input.GetKeyDown("joystick button 1"))
         {
             OnJoystickButtonDown();
         }

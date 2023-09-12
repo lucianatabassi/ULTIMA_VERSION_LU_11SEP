@@ -9,6 +9,7 @@ public class CARTEL_FINAL : MonoBehaviour
     private InteraccionCarpincho scriptCarpincho;
 
     public GameObject cartel;
+    public GameObject cartelTapado;
 
     public AudioClip musicaFinal;
     public AudioSource audioSource;
@@ -28,6 +29,7 @@ public class CARTEL_FINAL : MonoBehaviour
         if (scriptPajaro.pajaroCompletado && scriptPez.pezCompletado && scriptCarpincho.carpinchoCompletado)
         {
             cartel.SetActive(true);
+            cartelTapado.SetActive(false);
             audioSource.PlayOneShot(musicaFinal);
         }
     }

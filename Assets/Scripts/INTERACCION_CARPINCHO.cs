@@ -25,7 +25,7 @@ public class InteraccionCarpincho : MonoBehaviour
             float distanciaAB = Vector3.Distance(objetoA.transform.position, objetoB.transform.position);
 
             //if (Input.GetKey("mouse 0") && distanciaAB < 0.5f) // Ajusta la distancia para el contacto.
-            if (Input.GetKey("joystick button 0") && distanciaAB < 0.5f)
+            if (Input.GetKey("joystick button 1") && distanciaAB < 0.5f)
             {
                 if (sonidoDestruccionC != null && audioSource != null)
                 {
