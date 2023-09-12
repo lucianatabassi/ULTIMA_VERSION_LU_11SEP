@@ -17513,12 +17513,9 @@ PrefabInstance:
       addedObject: {fileID: 468098230}
     - targetCorrespondingSourceObject: {fileID: 8091532081604330198, guid: 343295b1fc8633c40ae58e1324578673, type: 3}
       insertIndex: 3
-      addedObject: {fileID: 468098235}
-    - targetCorrespondingSourceObject: {fileID: 8091532081604330198, guid: 343295b1fc8633c40ae58e1324578673, type: 3}
-      insertIndex: 4
       addedObject: {fileID: 468098229}
     - targetCorrespondingSourceObject: {fileID: 8091532081604330198, guid: 343295b1fc8633c40ae58e1324578673, type: 3}
-      insertIndex: 5
+      insertIndex: 4
       addedObject: {fileID: 468098228}
     - targetCorrespondingSourceObject: {fileID: 8091532081604330198, guid: 343295b1fc8633c40ae58e1324578673, type: 3}
       insertIndex: -1
@@ -17526,6 +17523,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8091532081604330198, guid: 343295b1fc8633c40ae58e1324578673, type: 3}
       insertIndex: -1
       addedObject: {fileID: 468098224}
+    - targetCorrespondingSourceObject: {fileID: 8091532081604330198, guid: 343295b1fc8633c40ae58e1324578673, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 468098235}
     - targetCorrespondingSourceObject: {fileID: 1945509297804946681, guid: 343295b1fc8633c40ae58e1324578673, type: 3}
       insertIndex: -1
       addedObject: {fileID: 753255834}
@@ -36463,7 +36463,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!33 &537196374894401389
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -37046,7 +37046,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &3739450171237324422
 GameObject:
   m_ObjectHideFlags: 0

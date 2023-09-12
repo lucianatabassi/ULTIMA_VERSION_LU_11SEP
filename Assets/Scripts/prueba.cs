@@ -7,31 +7,24 @@ public class prueba : MonoBehaviour
 {
     public float walkSpeed = 5f;
     private CharacterController player;
-
     private Gyroscope gyro;
-    private bool gyroSupported;
-
-    private Transform cameraTransform;
-    private Quaternion originalRotation;
 
     private void Awake()
     {
         player = GetComponent<CharacterController>();
 
         // Comprobar si el dispositivo admite el giroscopio
-        gyroSupported = SystemInfo.supportsGyroscope;
-
-        if (gyroSupported)
+        if (SystemInfo.supportsGyroscope)
         {
             gyro = Input.gyro;
-            gyro.enabled = true;
+            gyro.enabled = true; // Habilitamos el giroscopio
 
-            // Guardar la rotación original de la cámara
-            originalRotation = Camera.main.transform.rotation;
+            // Ajusta la orientación inicial del objeto al giroscopio
+            transform.rotation = Quaternion.Euler(90, 90, 0) * (new Quaternion(-gyro.attitude.x, -gyro.attitude.y, gyro.attitude.z, gyro.attitude.w));
         }
         else
         {
-            Debug.LogWarning("Gyroscope not supported on this device.");
+            Debug.LogError("El dispositivo no es compatible con el giroscopio.");
         }
     }
 
@@ -51,13 +44,10 @@ public class prueba : MonoBehaviour
         // Mueve al jugador en la dirección calculada
         player.Move(moveDirection.normalized * walkSpeed * Time.deltaTime);
 
-        if (gyroSupported)
+        if (gyro != null)
         {
-            // Obtener la rotación del giroscopio
-            Quaternion gyroRotation = gyro.attitude;
-
-            // Aplicar la rotación del giroscopio a la cámara
-            Camera.main.transform.rotation = originalRotation * gyroRotation;
+            // Actualiza la rotación del objeto basada en los datos del giroscopio
+            transform.rotation = Quaternion.Euler(90, 90, 0) * (new Quaternion(-gyro.attitude.x, -gyro.attitude.y, gyro.attitude.z, gyro.attitude.w));
         }
     }
 }
